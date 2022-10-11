@@ -32,12 +32,19 @@ public class MainActivity extends AppCompatActivity {
             if (windSound.isPlaying()) {
                 windSound.pause();
             } else {
-                if (rainSound.isPlaying() || seaSound.isPlaying() || birdSound.isPlaying() || underSound.isPlaying()) {
+                if (rainSound.isPlaying()) {
                     rainSound.pause();
+                }
+                if (seaSound.isPlaying()) {
                     seaSound.pause();
+                }
+                if (birdSound.isPlaying()) {
                     birdSound.pause();
+                }
+                if (underSound.isPlaying()) {
                     underSound.pause();
                 }
+
                 windSound.start();
             }
         });
@@ -45,10 +52,16 @@ public class MainActivity extends AppCompatActivity {
             if (rainSound.isPlaying()) {
                 rainSound.pause();
             } else {
-                if (windSound.isPlaying() || seaSound.isPlaying() || birdSound.isPlaying() || underSound.isPlaying()) {
+                if (windSound.isPlaying()) {
                     windSound.pause();
+                }
+                if (seaSound.isPlaying()) {
                     seaSound.pause();
+                }
+                if (birdSound.isPlaying()) {
                     birdSound.pause();
+                }
+                if (underSound.isPlaying()) {
                     underSound.pause();
                 }
                 rainSound.start();
@@ -58,10 +71,16 @@ public class MainActivity extends AppCompatActivity {
             if (seaSound.isPlaying()) {
                 seaSound.pause();
             } else {
-                if (windSound.isPlaying() || rainSound.isPlaying() || birdSound.isPlaying() || underSound.isPlaying()) {
+                if (windSound.isPlaying()) {
                     windSound.pause();
+                }
+                if (rainSound.isPlaying()) {
                     rainSound.pause();
+                }
+                if (birdSound.isPlaying()) {
                     birdSound.pause();
+                }
+                if (underSound.isPlaying()) {
                     underSound.pause();
                 }
                 seaSound.start();
@@ -71,10 +90,16 @@ public class MainActivity extends AppCompatActivity {
             if (birdSound.isPlaying()) {
                 birdSound.pause();
             } else {
-                if (rainSound.isPlaying() || seaSound.isPlaying() || windSound.isPlaying() || underSound.isPlaying()) {
+                if (windSound.isPlaying()) {
                     windSound.pause();
+                }
+                if (rainSound.isPlaying()) {
                     rainSound.pause();
+                }
+                if (seaSound.isPlaying()) {
                     seaSound.pause();
+                }
+                if (underSound.isPlaying()) {
                     underSound.pause();
                 }
                 birdSound.start();
@@ -84,11 +109,17 @@ public class MainActivity extends AppCompatActivity {
             if (underSound.isPlaying()) {
                 underSound.pause();
             } else {
-                if (windSound.isPlaying() || rainSound.isPlaying() || seaSound.isPlaying() || birdSound.isPlaying()) {
+                if (windSound.isPlaying()) {
                     windSound.pause();
+                }
+                if (rainSound.isPlaying()) {
                     rainSound.pause();
-                    seaSound.pause();
+                }
+                if (birdSound.isPlaying()) {
                     birdSound.pause();
+                }
+                if (seaSound.isPlaying()) {
+                    seaSound.pause();
                 }
                 underSound.start();
             }
