@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
             if (windSound.isPlaying()) {
                 windSound.pause();
             } else {
+                if (rainSound.isPlaying() || seaSound.isPlaying() || birdSound.isPlaying() || underSound.isPlaying()) {
+                    rainSound.pause();
+                    seaSound.pause();
+                    birdSound.pause();
+                    underSound.pause();
+                }
                 windSound.start();
             }
         });
@@ -39,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
             if (rainSound.isPlaying()) {
                 rainSound.pause();
             } else {
+                if (windSound.isPlaying() || seaSound.isPlaying() || birdSound.isPlaying() || underSound.isPlaying()) {
+                    windSound.pause();
+                    seaSound.pause();
+                    birdSound.pause();
+                    underSound.pause();
+                }
                 rainSound.start();
             }
         });
@@ -46,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
             if (seaSound.isPlaying()) {
                 seaSound.pause();
             } else {
+                if (windSound.isPlaying() || rainSound.isPlaying() || birdSound.isPlaying() || underSound.isPlaying()) {
+                    windSound.pause();
+                    rainSound.pause();
+                    birdSound.pause();
+                    underSound.pause();
+                }
                 seaSound.start();
             }
         });
@@ -53,6 +71,12 @@ public class MainActivity extends AppCompatActivity {
             if (birdSound.isPlaying()) {
                 birdSound.pause();
             } else {
+                if (rainSound.isPlaying() || seaSound.isPlaying() || windSound.isPlaying() || underSound.isPlaying()) {
+                    windSound.pause();
+                    rainSound.pause();
+                    seaSound.pause();
+                    underSound.pause();
+                }
                 birdSound.start();
             }
         });
@@ -60,6 +84,12 @@ public class MainActivity extends AppCompatActivity {
             if (underSound.isPlaying()) {
                 underSound.pause();
             } else {
+                if (windSound.isPlaying() || rainSound.isPlaying() || seaSound.isPlaying() || birdSound.isPlaying()) {
+                    windSound.pause();
+                    rainSound.pause();
+                    seaSound.pause();
+                    birdSound.pause();
+                }
                 underSound.start();
             }
         });
