@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/wind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Wind"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/wind_bg"/>
+
+    <TextView
+        android:id="@+id/sea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Sea"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/sea_bg"/>
+
+    <TextView
+        android:id="@+id/rain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Rain"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/rain_bg"/>
+
+    <TextView
+        android:id="@+id/bird"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Bird"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/bird_bg"/>
+
+    <TextView
+        android:id="@+id/underWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Under Water"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/under_bg"/>
+
+</LinearLayout>
