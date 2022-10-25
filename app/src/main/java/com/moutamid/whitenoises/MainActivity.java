@@ -2,14 +2,18 @@ package com.moutamid.whitenoises;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaParser;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView wind, sea, rain, bird, underwater;
+    TextView donate, privacy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +30,18 @@ public class MainActivity extends AppCompatActivity {
         sea = findViewById(R.id.sea);
         rain = findViewById(R.id.rain);
         bird = findViewById(R.id.bird);
+        donate = findViewById(R.id.donate);
+        privacy = findViewById(R.id.privacy);
         underwater = findViewById(R.id.underWater);
+
+        donate.setOnClickListener(v -> {
+            startActivity(new Intent(this, DonateActivity.class));
+        });
+
+        privacy.setOnClickListener(v -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/document/d/e/2PACX-1vTaamuI6mk-5pJoPbLJcPUgLgWuMWW5t-de2_mfVQtnfo9hlDBlVC68PpNkXd8PmyslfmMzylh70KC0/pub"));
+            startActivity(browserIntent);
+        });
 
         wind.setOnClickListener(v -> {
             if (windSound.isPlaying()) {

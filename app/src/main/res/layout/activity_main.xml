@@ -79,4 +79,31 @@
         android:gravity="center"
         android:background="@drawable/under_bg"/>
 
+    <TextView
+        android:id="@+id/donate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="White Noises"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:backgroundTint="#93CEFB"
+        android:background="@drawable/sea_bg"/>
+
+    <TextView
+        android:id="@+id/privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:padding="15dp"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:drawablePadding="8dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
 </LinearLayout>
